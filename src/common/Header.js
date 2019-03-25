@@ -5,12 +5,14 @@ const Header = ({ appTitle, navLinks = [] }) => (
     <h5 className="my-0 mr-md-auto font-weight-normal">{appTitle}</h5>
     <nav className="my-2 my-md-0 mr-md-3">
       {navLinks.map((link, index) => (
-        <a className="p-2 text-dark" href={link.href} key={index}>
+        <a className="p-2 text-dark" href={link.link} key={index}>
           {link.title}
         </a>
       ))}
     </nav>
-    <a className="btn btn-outline-primary">Sign up</a>
+    <a className="btn btn-outline-primary" href=".">
+      Sign up
+    </a>
   </div>
 );
 
